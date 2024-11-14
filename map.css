@@ -1,0 +1,26 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+  }
+
+.left {
+    height: 800px;
+    padding: 10px; /* Optional: add some padding */
+  }
+
+
+.right {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    height: 800px;
+    padding: 10px; /* Optional: add some padding */
+  }
+
+.text {
+    font-size: 20px;
+    font-family: "Gill Sans", sans-serif;
+    line-height: 1.5;
+}
+

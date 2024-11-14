@@ -8,13 +8,29 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="map.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datacube</title>
+    <title>EO Lab Datacube</title>
 </head>
 <body>
-    <div id="map", style="height:800px;"></div>
+    <div class="container">
+        <div id="map", class="left"></div>
+        <div id="content", class="right">
+            <div id="maintext", class="text">
+                Webviewer for the Datacube from <b><a target="_blank" href="https://geo.uni-greifswald.de/en/chairs/geographie/translate-to-english-fernerkundung-und-geoinformationsverarbeitung/"> Earth Observation and Geoinformation Science Lab Institute for Geography and Geology, University of Greifswald, Germany</a></b> 
+                <br><br>Satellite data was processed with <b><a target="_blank" href="https://github.com/davidfrantz/force">FORCE</a></b>
+                <br><br>Maintainer : <b><a target="_blank" href="https://vudongpham.github.io/">Dong Pham</a></b>
+                <br><br>Contact : <i>vudong.pham@uni-greifswald.de</i>
+                <br><br><i>(Lastest update: 14.11.2024)</i>
+            </div>
+            <div id="subtext">
+                <div id="datatext"></div>
+                <canvas id="myChart" style="width:100%;height:20%;bottom:0;"></canvas>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="map.js"></script>
 </html>
