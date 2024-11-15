@@ -8,7 +8,8 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="map.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +18,20 @@
 <body>
     <div class="container">
         <div id="map", class="left"></div>
-        <div id="content", class="right">
-            <div id="maintext", class="text">
-                Webviewer for the Datacube from <b><a target="_blank" href="https://geo.uni-greifswald.de/en/chairs/geographie/translate-to-english-fernerkundung-und-geoinformationsverarbeitung/"> Earth Observation and Geoinformation Science Lab Institute for Geography and Geology, University of Greifswald, Germany</a></b> 
-                <br><br>Satellite data was processed with <b><a target="_blank" href="https://github.com/davidfrantz/force">FORCE</a></b>
-                <br><br>Maintainer : <b><a target="_blank" href="https://vudongpham.github.io/">Dong Pham</a></b>
-                <br><br>Contact : <i>vudong.pham@uni-greifswald.de</i>
-                <br><br><i>(Lastest update: 14.11.2024)</i>
+        <div id="content">
+            <div class="right">
+            <div id="maintext" class="blog-post">
+                <h1>EOLab Datacube report</h1>
+                <i>(Lastest update: 15.11.2024)</i>
+                <br>🌐 Webviewer for the Datacube from <b><a target="_blank" href="https://geo.uni-greifswald.de/en/chairs/geographie/translate-to-english-fernerkundung-und-geoinformationsverarbeitung/"> Earth Observation and Geoinformation Science Lab Institute for Geography and Geology, University of Greifswald, Germany</a></b> 
+                <br><br>🛰️ Satellite data was processed with <b><a target="_blank" href="https://github.com/davidfrantz/force">FORCE</a></b>
+                <br><br>👨🏻 Maintainer : <b><a target="_blank" href="https://vudongpham.github.io/">Dong Pham</a></b>
+                <br><br>✉️ Contact : <a href="mailto: vudong.pham@uni-greifswald.de">vudong.pham@uni-greifswald.de</a>
+                <br><br><b>⬅️ Click on each tile on the map for details</b>
+            <div  style="width: 100%; height: 100%; position: relative; bottom: 0;">  
+                <canvas id="myChart"></canvas>
+            </div> 
             </div>
-            <div id="subtext">
-                <div id="datatext"></div>
-                <canvas id="myChart" style="width:100%;height:20%;bottom:0;"></canvas>
             </div>
         </div>
     </div>
