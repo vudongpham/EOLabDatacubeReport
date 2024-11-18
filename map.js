@@ -174,7 +174,7 @@ function checkHover(feature, layer) {
                             display: true,
                             text: 'Number of scenes'
                           },
-                        max: 180
+                        suggestedMax: 160
                     }
 
                 }
