@@ -156,7 +156,7 @@ function checkHover(feature, layer) {
                     }
                 },
                 animation: {
-                    duration: 2000 // This disables animations
+                    duration: 1000 // This disables animations
                 },
                 maintainAspectRatio: false,
                 responsive: true,
@@ -173,7 +173,8 @@ function checkHover(feature, layer) {
                         title: {
                             display: true,
                             text: 'Number of scenes'
-                          }
+                          },
+                        max: 180
                     }
 
                 }
