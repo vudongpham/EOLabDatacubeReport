@@ -102,7 +102,7 @@ function checkHover(feature, layer) {
             data_SEN2A.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['SEN2A']);
             data_SEN2B.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['SEN2B']);       
         }
-        const total_scences = data_LND05
+
 
         const ctx = document.getElementById('myChart').getContext('2d');
         currentChart = new Chart(ctx, {
