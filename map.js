@@ -84,6 +84,8 @@ function checkHover(feature, layer) {
         layer.setStyle(regularStyle)
         },
     click: function(e) {
+        document.getElementById('textGuide').style.display = 'none';
+
         if (currentChart) {
             currentChart.destroy();
         }
@@ -152,8 +154,18 @@ function checkHover(feature, layer) {
                 plugins: {
                     title: {
                         display: true,
-                        text: "Number of satellite scenes in Tile X: " + layer.feature.properties.Tile_X.toString() + " Y: " + layer.feature.properties.Tile_Y.toString()
-                    }
+                        font: {
+                            size: 20,            // Font size in pixels
+                            family: 'Arial',     // Optional: Font family
+                            weight: 'normal',      // Optional: Font weight (e.g., 'normal', 'bold')
+                            lineHeight: 1.2,      // Optional: Line height,
+                            color: '#000000'
+                        },
+                        text:
+                            'Tile ID: ' + layer.feature.properties.Tile_ID.toString() + ' | ' +
+                            'Total scenes: ' + layer.feature.properties.TOTAL_SCENES.toString()  + ' | ' +
+                            'Data size: ' + layer.feature.properties.TILE_SIZE.toString()  + ' GB'
+                    }       
                 },
                 animation: {
                     duration: 1000 // This disables animations
