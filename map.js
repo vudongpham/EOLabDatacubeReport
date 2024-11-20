@@ -2,7 +2,7 @@
 const geoJSON_file = 'data/datacube_wgs84.geojson';
 const dataJSON_file = 'data/data.json';
 const startYear = 1984;
-const endYear = 2023;
+const endYear = 2024;
 
 year_list = [];
 
