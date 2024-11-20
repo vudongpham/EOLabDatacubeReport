@@ -77,7 +77,8 @@ function checkHover(feature, layer) {
     layer.bindTooltip(
         `<b>X: ${layer.feature.properties.Tile_X} Y: ${layer.feature.properties.Tile_Y}</b><br>Click for details`)
     layer.on({
-        mouseover: function(e) {
+        
+    mouseover: function(e) {
         layer.setStyle(highlightStyle)
         },
     mouseout: function(e) {
