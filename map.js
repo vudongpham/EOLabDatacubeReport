@@ -154,7 +154,7 @@ function checkHover(feature, layer) {
                 {
                     label: 'Senintel-2C',
                     backgroundColor: "#c85d00",
-                    data: data_SEN2B
+                    data: data_SEN2C
                 }
             ]
             },
