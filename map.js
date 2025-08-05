@@ -91,19 +91,21 @@ function checkHover(feature, layer) {
             currentChart.destroy();
         }
         
-        var data_LND05 = []
-        var data_LND07 = []
-        var data_LND08 = []
-        var data_LND09 = []
-        var data_SEN2A = []
-        var data_SEN2B = []
+        var data_LND05 = [];
+        var data_LND07 = [];
+        var data_LND08 = [];
+        var data_LND09 = [];
+        var data_SEN2A = [];
+        var data_SEN2B = [];
+        var data_SEN2C = [];
         for (let i = 0; i < year_list.length; i++) {
             data_LND05.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['LND05']);
             data_LND07.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['LND07']);
             data_LND08.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['LND08']);  
             data_LND09.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['LND09']);  
             data_SEN2A.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['SEN2A']);
-            data_SEN2B.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['SEN2B']);       
+            data_SEN2B.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['SEN2B']);
+            data_SEN2C.push(json_data[layer.feature.properties.Tile_ID][year_list[i]]['SEN2C']);       
         }
 
 
@@ -146,6 +148,12 @@ function checkHover(feature, layer) {
                 {
                     label: 'Senintel-2B',
                     backgroundColor: "#de2f95",
+                    data: data_SEN2B
+                },
+
+                {
+                    label: 'Senintel-2C',
+                    backgroundColor: "#c85d00",
                     data: data_SEN2B
                 }
             ]
