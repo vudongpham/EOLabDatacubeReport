@@ -1,7 +1,7 @@
 
 const geoJSON_file = 'data/datacube_wgs84.geojson';
 const dataJSON_file = 'data/data.json';
-const startYear = 1984;
+const startYear = 2017;
 const endYear = 2025;
 
 year_list = [];
@@ -195,7 +195,7 @@ function checkHover(feature, layer) {
                             display: true,
                             text: 'Number of scenes'
                           },
-                        suggestedMax: 160
+                        suggestedMax: 70
                     }
 
                 }
