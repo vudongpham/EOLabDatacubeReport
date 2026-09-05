@@ -1,7 +1,7 @@
 
 const geoJSON_file = 'data/datacube_wgs84.geojson';
 const dataJSON_file = 'data/data.json';
-const startYear = 2017;
+const startYear = 1984;
 const endYear = 2025;
 
 year_list = [];
